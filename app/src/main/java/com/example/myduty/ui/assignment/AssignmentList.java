@@ -47,7 +47,7 @@ public class AssignmentList extends Fragment {
         assignmentViewModel.getmAllAssignments().observe(getViewLifecycleOwner(),assignments->{
             adapter.submitList(assignments);
         } );
-        Log.d("myTag",assignmentViewModel.getmAllAssignments().getValue().get(0).toString());
+//        Log.d("myTag",assignmentViewModel.getmAllAssignments().getValue().get(0).toString());
 
         return view;
     }

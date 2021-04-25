@@ -25,7 +25,7 @@ public abstract class AssignmentRoomDatabase extends RoomDatabase {
             synchronized (AssignmentRoomDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            AssignmentRoomDatabase.class, "assignment_database")
+                            AssignmentRoomDatabase.class, "assignment_database").addCallback(sRoomDatabaseCallback)
                             .build();
                 }
             }
