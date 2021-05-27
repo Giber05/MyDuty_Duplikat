@@ -29,4 +29,11 @@ class AssignmentRepository {
              mAssignmentDao.insert(assignment);
          });
      }
+
+     void delete(int idTugas)
+     {
+         AssignmentRoomDatabase.databaseWriteExecutor.execute(()->{
+             mAssignmentDao.delete(idTugas);
+         });
+     }
 }

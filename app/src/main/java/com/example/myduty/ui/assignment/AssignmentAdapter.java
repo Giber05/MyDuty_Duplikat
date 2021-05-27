@@ -55,7 +55,6 @@ public class AssignmentAdapter extends ListAdapter<Assignment, AssignmentAdapter
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fragment_assignment_list2, parent, false);
-
         return new ViewHolder(view);
     }
 
@@ -74,15 +73,12 @@ public class AssignmentAdapter extends ListAdapter<Assignment, AssignmentAdapter
                 intent.putExtra("data2", assignment.getTopic());
                 intent.putExtra("data3", assignment.getDeadline());
                 intent.putExtra("data4", assignment.getDescription());
+                intent.putExtra("idTugas",assignment.getIdTugas());
                 it.getContext().startActivity(intent);
             }
         }));
     }
 
-//    @Override
-//    public int getItemCount() {
-//        return mValues.size();
-//    }
 
     static class WordDiff extends DiffUtil.ItemCallback<Assignment> {
         @Override

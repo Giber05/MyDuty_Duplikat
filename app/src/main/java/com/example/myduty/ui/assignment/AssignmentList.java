@@ -27,8 +27,6 @@ public class AssignmentList extends Fragment {
     ArrayList<Assignment> assignments = new ArrayList<Assignment>();
     public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,8 +45,6 @@ public class AssignmentList extends Fragment {
         assignmentViewModel.getmAllAssignments().observe(getViewLifecycleOwner(),assignments->{
             adapter.submitList(assignments);
         } );
-//        Log.d("myTag",assignmentViewModel.getmAllAssignments().getValue().get(0).toString());
-
         return view;
     }
 

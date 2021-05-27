@@ -17,4 +17,7 @@ public interface AssignmentDao {
 
     @Query("SELECT * FROM assign_table ORDER BY priority DESC")
     LiveData<List<Assignment>> getAlphabetizedWords();
+
+    @Query("DELETE FROM assign_table WHERE idTugas = :idTugas")
+    void delete(int idTugas);
 }

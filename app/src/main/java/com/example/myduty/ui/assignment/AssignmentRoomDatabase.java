@@ -44,7 +44,7 @@ public abstract class AssignmentRoomDatabase extends RoomDatabase {
                 // Populate the database in the background.
                 // If you want to start with more words, just add them.
                 AssignmentDao dao = INSTANCE.assignmentDao();
-                dao.deleteAll();
+//                dao.deleteAll();
 
                 Assignment assignment = new Assignment("Matematika","Integral","02-April-2021",4,"Cepat bereskan");
                 dao.insert(assignment);
