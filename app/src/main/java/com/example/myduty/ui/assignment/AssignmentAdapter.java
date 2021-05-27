@@ -46,7 +46,7 @@ public class AssignmentAdapter extends ListAdapter<Assignment, AssignmentAdapter
             mView = view;
             topicCourse = (TextView) view.findViewById(R.id.task_topic);
             deadlineText = (TextView) view.findViewById(R.id.deadline);
-            doneButton = (Button) view.findViewById(R.id.done_btn);
+//            doneButton = (Button) view.findViewById(R.id.done_btn);
             topicText = (TextView)view.findViewById(R.id.topic);
         }
     }

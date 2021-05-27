@@ -6,18 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        android:id="@+id/home_detail"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rounded_corner_layout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="UPCOMMING!!!"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/home_deadline"
+                android:text="@string/label_deadline"
+                android:textColor="@color/white"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_corner_layout"
+                android:backgroundTint="#B60004"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_topic" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/home_course"
+                android:text="@string/label_course"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_corner_layout"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#FFFF88"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/home_topic"
+                android:text="@string/label_course"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_corner_layout"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:backgroundTint="#FFFF88"/>
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:id="@+id/home_topic"-->
+<!--            android:text="@string/label_topic"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@drawable/ic_menu_gallery"-->
+<!--            android:textSize="16sp"-->
+<!--            android:background="@drawable/rounded_corner_layout"-->
+<!--            android:backgroundTint="#FFFF88"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
+    </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

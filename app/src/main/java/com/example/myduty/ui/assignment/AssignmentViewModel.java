@@ -18,7 +18,7 @@ public class AssignmentViewModel extends AndroidViewModel {
         mAllAssignments = mRepository.getAllAssignments();
     }
 
-    LiveData<List<Assignment>> getmAllAssignments(){return mAllAssignments;}
+    public LiveData<List<Assignment>> getmAllAssignments(){return mAllAssignments;}
 
     public void insert(Assignment assignment) {mRepository.insert(assignment);}
     public void delete(int idTugas){mRepository.delete(idTugas);}
